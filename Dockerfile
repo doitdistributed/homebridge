@@ -14,6 +14,8 @@ COPY package.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app
 
+RUN npm install ahomebridge-loxone-ws
+
 EXPOSE 51826:51999
 
 CMD [ "npm", "start" ]
